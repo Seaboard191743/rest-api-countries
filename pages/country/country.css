@@ -64,6 +64,7 @@
   justify-content: center;
   align-items: center;
   background: #f2f2f2;
+  transition: margin 0.3s;
 }
 .back-linkdark {
   width: 136px;
@@ -75,6 +76,11 @@
   background: #2b3844;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
   border-radius: 6px;
+  transition: margin 0.3s;
+}
+.back-link:hover,
+.back-linkdark:hover {
+  margin-left: 10px;
 }
 .back-link > img {
   margin-right: 10px;
