@@ -1,0 +1,115 @@
+.filter {
+  background: #f2f2f2;
+  padding: 0 1rem;
+}
+.filterdark {
+  background: #202c36;
+  padding: 0 1rem;
+}
+.search {
+  width: min(480px, 100%);
+  height: 56px;
+  background: #fff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  border: none;
+  margin: 48px 0;
+  padding-left: 20px;
+  outline: none;
+}
+.searchdark {
+  width: min(480px, 100%);
+  height: 56px;
+  background: #2b3844;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  border: none;
+  margin: 48px 0;
+  padding-left: 20px;
+  outline: none;
+}
+.search::placeholder {
+  color: #848484;
+}
+.searchdark::placeholder {
+  color: #fff;
+}
+.selectbox {
+  width: 200px;
+  height: 224px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  z-index: 10;
+}
+.selectbox-header,
+.selectbox-body {
+  padding: 16px 24px;
+  border-radius: 5px;
+  background: #fff;
+  color: #111517;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+.selectbox-headerdark,
+.selectbox-bodydark {
+  padding: 16px 24px;
+  border-radius: 5px;
+  background: #2b3844;
+  color: #fff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+.selectbox-header,
+.selectbox-headerdark {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectbox-body,
+.selectbox-bodydark {
+  margin-top: auto;
+  height: 164px;
+  display: none;
+}
+
+.selectbox-body-active {
+  display: block;
+}
+.selectbox-body > a,
+.selectbox-bodydark > a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.selectbox-body > a:hover {
+  color: rgb(199, 199, 199);
+}
+.selectbox-bodydark > a:hover {
+  color: #ffc23c;
+}
+@media (max-width: 720px) {
+  .filter,
+  .filterdark {
+    height: 240px;
+  }
+  .search {
+    width: 100%;
+    margin: 48px 0 15px;
+  }
+  .searchdark {
+    width: 100%;
+    margin: 48px 0 15px;
+  }
+  .selectbox {
+    top: 140px;
+    left: 0;
+  }
+}

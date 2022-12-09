@@ -1,0 +1,26 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 264px);
+  justify-items: stretch;
+  column-gap: calc((100% - 4 * 264px) / 3);
+}
+
+@media (max-width: 1140px) {
+  .card-list {
+    grid-template-columns: repeat(3, 264px);
+    column-gap: calc((100% - 3 * 264px) / 2);
+  }
+}
+@media (max-width: 860px) {
+  .card-list {
+    grid-template-columns: repeat(2, 264px);
+    column-gap: calc(100% - 2 * 264px);
+  }
+}
+
+@media (max-width: 580px) {
+  .card-list {
+    grid-template-columns: 264px;
+    justify-content: center;
+  }
+}

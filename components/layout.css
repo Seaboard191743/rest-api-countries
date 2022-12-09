@@ -1,0 +1,10 @@
+.layout {
+  padding: 0 1rem;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+.layoutdark {
+  padding: 0 1rem;
+  min-height: 100vh;
+  background: #202c36;
+}
